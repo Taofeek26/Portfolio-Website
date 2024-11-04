@@ -1,0 +1,28 @@
+---
+const navItems = [
+  { href: '/', text: 'Home' },
+  { href: '/blog', text: 'Blog' },
+  { href: '/projects', text: 'Projects' },
+  { href: '/publications', text: 'Publications' },
+  { href: '/experience', text: 'Experience' },
+  { href: '/about', text: 'About' },
+  { href: '/contact', text: 'Contact' },
+];
+---
+
+<nav class="bg-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between h-16">
+      <div class="flex space-x-8">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            class="inline-flex items-center px-1 pt-1 text-gray-900 hover:text-indigo-600"
+          >
+            {item.text}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</nav>

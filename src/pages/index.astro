@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to My Portfolio">
+  <div class="text-center">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Welcome to My Portfolio</h1>
+    <p class="text-xl text-gray-600 mb-8">
+      I'm a [Your Profession] passionate about [Your Interests]
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Latest Blog Posts</h2>
+        <!-- Blog posts will be dynamically loaded here -->
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Featured Projects</h2>
+        <!-- Projects will be dynamically loaded here -->
+      </div>
+    </div>
+  </div>
+</Layout>
